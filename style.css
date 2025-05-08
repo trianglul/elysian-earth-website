@@ -6,15 +6,21 @@ body {
   background-color: #f6f3ef;
   color: #3e2f2f;
 }
-#bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  object-fit: cover;
-  z-index: -1; /* Puts video behind content */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* centers vertically */
+  background-color: #f5f5f5; /* optional: neutral background */
 }
+
+.video-wrapper video {
+  width: 80%;
+  max-width: 720px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Header */
 header {
