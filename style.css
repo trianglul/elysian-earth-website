@@ -6,6 +6,15 @@ body {
   background-color: #f6f3ef;
   color: #3e2f2f;
 }
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Puts video behind content */
+}
 
 /* Header */
 header {
