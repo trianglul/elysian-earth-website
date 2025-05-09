@@ -127,6 +127,19 @@ h1, h2, h3 {
   background-color: #b088b7; /* deeper lavender on hover */
   transform: scale(1.05);
 }
+.buy-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #5a3d5c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.buy-button:hover {
+  background-color: #7b5780;
+}
 
 /* Footer */
 footer {
