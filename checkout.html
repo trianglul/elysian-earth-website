@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - Elysian Earth Essence</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="checkout-section">
+      <h2 id="product-name">Product</h2>
+      <p id="product-price">Price: </p>
+
+      <form>
+        <label>Name: <input type="text" name="name" required /></label><br/>
+        <label>Email: <input type="email" name="email" required /></label><br/>
+        <label>Address: <input type="text" name="address" required /></label><br/>
+        <button type="submit">Proceed to Payment</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Elysian Earth Essence
+  </footer>
+
+  <script>
+    // Basic JavaScript to populate the product name and price
+    const params = new URLSearchParams(window.location.search);
+    const product = params.get("product");
+    const products = {
+      vanilla: { name: "Vanilla Body Butter", price: "$12.99" },
+      lavender: { name: "Lavender Body Butter", price: "$13.99" },
+      orange: { name: "Orange Body Butter", price: "$11.99" },
+      ylang: { name: "Ylang Ylang Body Butter", price: "$14.99" }
+    };
+
+    if (products[product]) {
+      document.getElementById("product-name").textContent = products[product].name;
+      document.getElementById("product-price").textContent = "Price: " + products[product].price;
+    } else {
+      document.getElementById("product-name").textContent = "Unknown Product";
+      document.getElementById("product-price").textContent = "";
+    }
+  </script>
+</body>
+</html>
