@@ -24,6 +24,17 @@ header {
   padding: 20px;
   text-align: center;
 }
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center horizontally */
+  gap: 15px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
 
 nav {
   margin-top: 10px;
