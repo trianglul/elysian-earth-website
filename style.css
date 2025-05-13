@@ -1,11 +1,15 @@
 /* Global Styles */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f6f3ef;
   color: #3e2f2f;
 }
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
 #bg-video {
   position: fixed;
   top: 0;
