@@ -42,6 +42,7 @@ header {
 .site-title {
   font-size: 2rem;
   margin: 0;
+  text-shadow; 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 /* Responsive adjustments for mobile */
 @media (max-width: 600px) {
