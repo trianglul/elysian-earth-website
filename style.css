@@ -23,24 +23,28 @@ h1, h2, h3 {
 
 /* Header */
 header {
+  position: relative;
   background-color: #6b4c71;
   color: #fff;
-  padding: 20px;
-
+  padding: 20px 0;
+  text-align: center; /* centers nav and title */
 }
-.logo-title {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* center horizontally */
-  gap: 15px;
-  text-align: left;
+.header-container {
+  position: relative;
 }
 
 .logo {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 60px;
   height: auto;
 }
-
+.site-title {
+  font-size: 2rem;
+  margin: 0;
+}
 nav {
   margin-top: 10px;
 }
