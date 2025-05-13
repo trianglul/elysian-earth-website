@@ -23,21 +23,19 @@ h1, h2, h3 {
 
 /* Header */
 header {
-  position: relative;
   background-color: #6b4c71;
   color: #fff;
   padding: 20px 0;
   text-align: center; /* centers nav and title */
 }
 .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   position: relative;
 }
-
 .logo {
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
   width: 60px;
   height: auto;
 }
@@ -45,6 +43,22 @@ header {
   font-size: 2rem;
   margin: 0;
 }
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .logo {
+    position: static;
+    transform: none;
+    margin-bottom: 5px;
+  }
+  .site-title {
+    font-size: 1.5rem;
+  }
+}
+
 nav {
   margin-top: 10px;
 }
