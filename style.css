@@ -77,10 +77,10 @@ nav a {
   margin: 0 10px;
   font-weight: 800;
   text-shadow:
-    -1px -1px 0 #fff,
+    -1px -1px 0 #b46eff,
     1px -1px 0 #fff,
     -1px 1px 0 #fff,
-    1px 1px 0 #fff;
+    1px 1px 0 #b46eff;
 }
 
 /*nav a:hover {
