@@ -38,7 +38,7 @@ header {
   position: relative;
 }
 .logo {
-  width: 60px;
+  width: 70px;
   height: auto;
 }
 .site-title {
@@ -78,7 +78,7 @@ nav a {
   font-weight: 800;
   text-shadow:
     -1px -1px 0 #b46eff,
-    1px -1px 0 #000,
+    1px -1px 0 #3a0078,
     -1px 1px 0 #000,
     1px 1px 0 #b46eff;
 }
