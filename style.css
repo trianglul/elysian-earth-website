@@ -75,17 +75,17 @@ nav {
 nav a {
   color: #a41ac7; /*e4d0e9*/
   margin: 0 10px;
-  font-weight: 500;
+  font-weight: 800;
   text-shadow:
-    -1px -1px 0 #fff,
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-    1px 1px 0 #fff;
+    -1px -1px 0 #7b00ff,
+    1px -1px 0 #7b00ff,
+    -1px 1px 0 #7b00ff,
+    1px 1px 0 #7b00ff;
 }
 
-nav a:hover {
+/*nav a:hover {
   text-decoration: underline;
-}
+}*/
 
 /* Main Sections */
 main {
