@@ -73,14 +73,9 @@ nav {
 }
 
 nav a {
-  color: #b46eff; /*e4d0e9*/
-  margin: 0 10px;
+  color: #830fff; /*e4d0e9*/
+  margin: 0 20px;
   font-weight: 800;
-  text-shadow:
-    0 0 5px #fff,
-    0 0 10px #e1bee7,
-    0 0 20px #c8a2c8,
-    0 0 30px #b088b7;
 }
 
 nav a:hover {
