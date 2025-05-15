@@ -107,6 +107,30 @@ h1, h2, h3 {
   text-align: center;
   border-radius: 8px;
 }
+/* Floral image positioning */
+.hero-wrapper {
+  position: relative;
+  display: felx;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+.floral-left,
+.floral-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px; /* Adjust as needed */
+  height: auto;
+  z-index: 0;
+  opacity: 0.7;
+}
+.floral-left {
+  left: 0;
+}
+.floral-right {
+  right: 0;
+}
 
 .featured-products, .products, .gallery {
   display: flex;
