@@ -110,7 +110,7 @@ h1, h2, h3 {
 /* Floral image positioning */
 .hero-wrapper {
   position: relative;
-  display: felx;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px 0;
