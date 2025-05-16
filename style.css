@@ -73,7 +73,7 @@ nav {
 }
 
 nav a {
-  color: #830fff; /*e4d0e9*/
+  color: #ffffff; /*e4d0e9*/
   margin: 0 20px;
   font-weight: 800;
 }
@@ -83,13 +83,13 @@ nav a:hover {
 }
 @keyframes glowPulse {
   0% {
-    text-shadow: 0 0 5px #e4d0e9;
+    text-shadow: 0 0 8px #af00ff;
   }
   50% {
-    text-shadow: 0 0 12px #e4d0e9, 0 0 20px #c8a2c8;
+    text-shadow: 0 0 16px #af00ff, 0 0 20px #c8a2c8;
   }
   100% {
-    text-shadow: 0 0 5px #e4d0e9;
+    text-shadow: 0 0 8px #af00ff;
   }
 }
 /* Main Sections */
