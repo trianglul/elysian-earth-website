@@ -19,31 +19,6 @@
   <div id="payment-form"></div>
   <button id="submit-button">Pay Now</button>
 
-  <!-- Square Payment Script -->
-  <script type="module">
-    import { Payments } from 'https://sandbox.web.squarecdn.com/v1/square.js';
-
-    async function initializeSquare() {
-      const payments = Payments('sandbox-sq0idb-WNoRZeYCPaAI9nZDABLpdg', 'LW2F13NTDXAH9');
-
-      const card = await payments.card();
-      await card.attach('#payment-form');
-
-      const submitButton = document.getElementById('submit-button');
-      submitButton.addEventListener('click', async () => {
-        const result = await card.tokenize();
-        if (result.status === 'OK') {
-          alert('Card tokenized! Token: ' + result.token);
-          // You can now send `result.token` to your backend for processing
-        } else {
-          alert('Tokenization failed!');
-          console.log(result.errors);
-        }
-      });
-    }
-
-    initializeSquare();
-  </script>
   <header>
     <div class="header-container">
     <img src="images/eeelogo.png" alt="Elysian Earth Essence Logo" class="logo"/>
@@ -89,5 +64,8 @@
   <footer>
     &copy; 2025 Elysian Earth Essence
   </footer>
+  
+  <script type="module" src="square-payment.js"></script>
+
 </body>
 </html>
